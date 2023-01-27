@@ -195,6 +195,7 @@ svg {
     --space-sm: calc(0.75*var(--space-unit));
     --space-md: calc(1.25*var(--space-unit));
     --space-lg: calc(2*var(--space-unit));
+    --space-lg-bottom: calc(2*var(--space-unit));
     --space-xl: calc(3.25*var(--space-unit));
     --space-xxl: calc(5.25*var(--space-unit));
     --space-xxxl: calc(8.5*var(--space-unit));
@@ -2353,7 +2354,7 @@ u,
 
 .margin-bottom-lg {
     margin-bottom: 2em;
-    margin-bottom: var(--space-lg)
+    margin-bottom: var(--space-lg);
 }
 
 .margin-bottom-xl {
@@ -4344,4 +4345,8 @@ a {
 
 .cd-article-link:hover {
     opacity: 0.8
+}
+
+.my_class #hour_message{
+    font-weight: bold;
 }

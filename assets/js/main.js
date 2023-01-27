@@ -370,7 +370,7 @@
 	}
 }());
 
-var span = document.getElementById('span');
+var span = document.getElementById('hour_message');
 
 function time() {
   var d = new Date();
@@ -383,7 +383,7 @@ function time() {
 
 setInterval(time, 1000);
 
-var actual_Day_mssg = document.getElementById('day');
+var actual_Day_mssg = document.getElementById('date_message');
 
 
 function week_day(){
