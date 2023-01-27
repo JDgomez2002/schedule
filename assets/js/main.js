@@ -389,7 +389,7 @@ var actual_Day_mssg = document.getElementById('date_message');
 function week_day(){
 	var actual_Date = new Date();
 	var actual_Week_Day = actual_Date.getDay().toString();
-	var actual_Month_Day = actual_Date.getDay().toString();
+	var actual_Month_Day = actual_Date.getDate().toString();
 	var actual_Month = actual_Date.getMonth().toString();
 	var actual_Year = actual_Date.getFullYear().toString();
 	
