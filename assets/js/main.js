@@ -369,3 +369,112 @@
 		};
 	}
 }());
+
+var span = document.getElementById('span');
+
+function time() {
+  var d = new Date();
+  var s = d.getSeconds();
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = 
+    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+}
+
+setInterval(time, 1000);
+
+var actual_Day_mssg = document.getElementById('day');
+
+
+function week_day(){
+	var actual_Date = new Date();
+	var actual_Week_Day = actual_Date.getDay().toString();
+	var actual_Month_Day = actual_Date.getDay().toString();
+	var actual_Month = actual_Date.getMonth().toString();
+	var actual_Year = actual_Date.getFullYear().toString();
+	
+	switch(actual_Week_Day){
+		case "1":
+			actual_Week_Day = "Monday";
+			break;
+		case "2":
+			actual_Week_Day = "Tuesday";
+			break;
+		case "3":
+			actual_Week_Day = "Wednesday";
+			break;
+		case "4":
+			actual_Week_Day = "Tuesday";
+			break;
+		case "5":
+			actual_Week_Day = "Friday";
+			break;
+		case "6":
+			actual_Week_Day = "Saturday";
+			break;
+		default:
+			actual_Week_Day = "Sunday";
+			break;
+	}
+
+	switch(actual_Month){
+		case "0":
+			actual_Month = "January";
+			break;
+		case "1":
+			actual_Month = "February";
+			break;
+		case "2":
+			actual_Month = "March";
+			break;
+		case "3":
+			actual_Month = "April";
+			break;
+		case "4":
+			actual_Month = "May";
+			break;
+		case "5":
+			actual_Month = "June";
+			break;
+		case "6":
+			actual_Month = "July";
+			break;
+		case "7":
+			actual_Month = "August";
+			break;
+		case "8":
+			actual_Month = "September";
+			break;
+		case "9":
+			actual_Month = "October";
+			break;
+		case "10":
+			actual_Month = "November";
+			break;
+		default:
+			actual_Month = "December";
+			break;
+	}
+
+	switch(actual_Month_Day.slice(-1)){
+		case "1":
+			actual_Month_Day = actual_Month_Day.concat("st");
+			break;
+		case "2":
+			actual_Month_Day = actual_Month_Date.concat("nd");
+			break;
+		case "3":
+			actual_Month_Day = actual_Month_Day.concat("rd");
+			break;
+		default:
+			actual_Month_Day = actual_Month_Day.concat("th");
+			break;
+	}
+
+	var date_message = actual_Week_Day+", "+actual_Month+" "+actual_Month_Day+" "+actual_Year;
+
+	console.log(date_message);
+	actual_Day_mssg.textContent = date_message;
+}
+
+setInterval(week_day, 1000);
