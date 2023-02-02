@@ -461,7 +461,7 @@ function week_day(){
 			actual_Month_Day = actual_Month_Day.concat("st");
 			break;
 		case "2":
-			actual_Month_Day = actual_Month_Date.concat("nd");
+			actual_Month_Day = actual_Month_Day.concat("nd");
 			break;
 		case "3":
 			actual_Month_Day = actual_Month_Day.concat("rd");
