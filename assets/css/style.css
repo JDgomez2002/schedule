@@ -3653,27 +3653,27 @@ mark {
 }
 
 :root {
-    --cd-color-event-1: hsl(199, 25%, 46%);
+    --cd-color-event-1: #003566;
     --cd-color-event-1-h: 199;
     --cd-color-event-1-s: 25%;
     --cd-color-event-1-l: 46%;
-    --cd-color-event-2: hsl(271, 23%, 26%);
+    --cd-color-event-2: #1A759F;
     --cd-color-event-2-h: 271;
     --cd-color-event-2-s: 23%;
     --cd-color-event-2-l: 26%;
-    --cd-color-event-3: hsl(162, 14%, 68%);
+    --cd-color-event-3: #34A0A4;
     --cd-color-event-3-h: 162;
     --cd-color-event-3-s: 14%;
     --cd-color-event-3-l: 68%;
-    --cd-color-event-4: hsl(31, 89%, 68%);
+    --cd-color-event-4: #136f63;
     --cd-color-event-4-h: 31;
     --cd-color-event-4-s: 89%;
     --cd-color-event-4-l: 68%;
-    --cd-color-event-5: hsl(118, 99%, 32%);
+    --cd-color-event-5: #8093f1;
     --cd-color-event-5-h: 118;
     --cd-color-event-5-s: 71%;
     --cd-color-event-5-l: 64%;
-    --cd-color-event-6: hsl(333, 100%, 40%);
+    --cd-color-event-6: #5e60ce;
     --cd-color-event-6-h: 333;
     --cd-color-event-6-s: 100%;
     --cd-color-event-6-l: 40%;
@@ -3996,10 +3996,11 @@ a {
 
     .cd-schedule-modal__date,
     .cd-schedule__event a::before {
-        font-size: 0.72916em;
-        font-size: calc(var(--text-xs)*1.05);
+        font-size: 1em;
+        /* font-size: calc(var(--text-xs)*1.05); */
         margin-bottom: 0.125em;
-        margin-bottom: var(--space-xxxxs)
+        margin-bottom: var(--space-xxxxs);
+        color: white;
     }
 }
 
